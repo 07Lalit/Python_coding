@@ -1,0 +1,83 @@
+              Fundamentals of Programming Language
+              ------------------------------------
+
+Q1 What we will study today?
+-> What is programming language ? what's the need?.
+-> Some Commonly used words in programming lang.
+   and their meanings?
+-> programming language classification.
+->Difference bt/w Compiler and Interpreter.
+-> 10 min gd discussion basic
+-> 10 min what you should start make your presence
+    in the digital world.
+-> 10 min revise , hr, homework, reasoning 5 min video.
+
+-------------------------******--------------------------
+Low level language->
+  It is the most closest language to the hardware.
+  fastest (010101)
+  machine dependent.
+
+   1) Machine level language ->
+            computer's native(jaan-pechan ki)
+            ki.(01010)
+            machine understandable.
+            0 and 1
+            fastest language .
+            machine dependent
+            difficlt to learn and understand.
+            Need expert to write and understand.
+            error prone(galti hone ke chances
+             jayda ho ) language.
+
+
+   2) Assembly->
+   ->modified form of machine level language.
+   -> It overcome some drawback that are in e
+   earlier programming lang.
+   -> Used Mnemonics
+    (It is a small english words which represents
+     the particular operations).
+     ex=>
+
+     add
+     sum
+     mul
+     div/
+     easy to understand
+     easy to find bugs and errors.
+     -> bugs can be defined as the problems that
+        we faced in our programs as our program
+        not behave the way we want.
+     -> errors are of two types syntax errors and
+        runtime errors
+     -> hard to remember the mnemonics
+     -> machine dependent.
+
+
+high level language ->
+       -> It is a English type language.
+       -> Machine Independent.
+
+       translator->
+       1) compiler
+       2) Interpreter
+
+=> compiler
+    * Scan whole program at once.
+    * Check Syntax error gives all at once.
+    * generate intermediate code .
+    * consume more memory.
+    * fast
+    * efficient
+    -> c, c++, java
+
+
+
+=> Interpreter / Scripting language.
+   * Scan whole program line by line.
+   * One error at a time.
+   * no intermediate code generate.
+   * consume less memory
+   * slow as compare to compiler
+   -> javascript,python,php , perl,pizza ...
