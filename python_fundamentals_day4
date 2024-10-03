@@ -1,0 +1,108 @@
+
+Q Why Learn Python?
+-> 1) Easy to code (begineer friendly)
+   2) to many libraries for different fields.
+   3) Large Scope :
+    Artificial Intelligence, Machine Learning, Big data,
+    Internet of Things,Data Science,Computer Automatic Design,
+    Robotics,Automations,Designing, Graphical User Interface,
+    Web Development, Hacking, and so on...
+   4) One of the trending language so you can make good money.
+
+Q What are the Feature or characteristics of python PL?
+=>
+1) Simplicity-: Userfriendly, readable, English type.
+2) Freeware -: You don't need to pay a single penny to any
+            organinization for using python.
+
+           python.org //Non profitable organization (donation)
+           java.com //commercial (money)
+
+3) Open Source -: Source code open or available to all
+           present on internet .
+
+4) High level Language
+5) It follows bot POP & OOPs Methodology.
+6) Scripting Language: Python use Interpreter
+7) Dynamically typed programming-:
+        Static
+     -> compile hone se pehle
+     -> We need to specify the datatype of variable while
+        declaring it in static types programming languages
+        like c,c++, java
+
+         Dynamic
+      -> Run time prr decide hota hai interpreter ke dwara.
+      -> We don't need to specify the datatype of  variable
+         it automatically interpreted at the run time
+         ( time taking ).
+
+    c -> int a = 10 ;
+         float b = 22.33;
+         char c = 'A';
+
+    python-> a = 10
+             b = 222.33
+             c = 'A'
+             d = "lalit"
+
+8) Platform Independent-:
+    platform ( Operating System , windows,linux,macintosh)
+    WORA (tagline) -: Write Once Run Anywhere.
+
+9) Extensible (attach/extend) -> It provides us the ability
+            to Integrate the code of any language with python.
+
+10) Powerful Libraries -> Modules are compact with different
+               number of rich  features and fuctions.
+
+ Limitations of python:
+
+ 1) Slow language -: 1) Interpreted language
+                     2) Dynamically typed.
+
+ 2) Not Good for  Mobile app development .
+   facebook  flutter --Dart Programming.
+    kotlin (google ) , React Native , java Mobile Edition
+
+   kivy library hai python me karna ho to...
+
+   i) Slow
+   ii) Memory Management is not upto the mark
+
+ Good program-> Less Resource (time & Space complexity)
+                used to make our program faster and efficient.
+
+
+ Q What are  the applications of Python in real world?
+ -> Udemy,Spotify, facebook , google , Youtube, Instagram
+    pinterest, dropbox, Mozilla firefox .
+
+                  Libraries used in different Fields.
+                  ---------------------------------
+
+ 1) GUI (graphical user Interface) / dekstop app developmet-:
+             Tkinter , PyGobject, PyQt
+
+ 2) Web application Development -: Django, Flask, Pyramid , Bootle
+ 3) IOT (Internet of Things) -: rasberri-pi .. coding is done
+     in python .
+
+ 4) Data Analysis / data Science -:
+        Numpy(numerical python) , Pandas, Seaborne, Matplotlib.
+
+ 5) Artificial Intellice / Machine lea. -> Scikit learn,
+                Tensorflow ...
+
+ 6) Hacking -" IMpacket.
+ 7) Web Scrapping -: Without visit any website ya bina ushe
+             login kiye uske content or information ko
+    ko access karna to your machine in readable form .
+     Beautifulsoup .
+
+
+  ------------------------------------------------------------------
+
+
+
+
