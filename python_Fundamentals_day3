@@ -1,0 +1,86 @@
+                   python Fundamentals
+                   ------------------
+C -> Procedure oriented programming
+C++ =>  Pop and oops
+python => pop and oops
+java => oops
+
+**********************************************
+
+C -> Denis Ritchie
+   * Developed in the year 1972.
+   * Middle level language
+       -> because it follows some charteristics of
+          LLL and some of HLL.
+   LLL-> * Machine dependent
+         * Can Interact with Hardware.
+   HLL-> * User Friendly (English type language)
+         * Compiler are used.
+
+   C was used to create such softwares which deal
+   with or interact with hardware directly .
+   1) Operating System(unix)
+   2) Device driver
+   * market ki best programming lang. for 10+ years.
+(adalovelace First Lady programer ...)
+
+C++ ->
+    * Developer name is Bjarne Stroustroup.
+    * Developed in the year 1984 .
+    * Followed both oops and procedure methodology.
+    * application become more secure(reason OOPs).
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+               PYTHON (Versatile language)
+               ------------------------
+
+  -> Python is a general purpose high level
+     powerful programming language.
+
+     general purpose-: It can be used in every
+                     possible field.
+     powerful -:  It is compact with different
+                 number of rich libraries for
+                 different fields.
+         ex-: data science- numpy , pandas
+         full stack wed development-: django faramework.
+
+
+     Libraries -:
+
+     #import calendar
+     print(calendar.calendar(2024))
+
+ => Developer of python is Guido Van Rossum.
+ -> 1989 me develop kiya tha.
+ -> Detuch Scientist work in Netherland
+ -> National Institute of Research Neterland.
+ -> official D.O.B is 20th feb 1991.
+
+ Ideology of Developing python is ->
+ So his Ideology was to develop a language in which
+ people don't bother much about the syntax of given
+ language but on the logic building.
+
+ Q. Why name python?
+ -> At that time they used to watch a famous TV Show
+    in their leisure time on BBC (British Broadcast
+    channel) named Monty's
+    Python flying Circus .
+  java ki parent language hai c++
+
+ Q What is the parent language of python?
+ -> As python is a versatile language.
+   So he takes/inherit best features of different
+   programming language.
+   1) Procedure Oriented ka feature isne C languge se liya.
+   2) OOPs -> C++ se.
+   3) Scripting Language -> Perl (Interpreter use hota hai)
+   4) Modular programming -> Modula3
+   (modules -files) Resuse the same code-Reuseability.
+
+
+
+
+
