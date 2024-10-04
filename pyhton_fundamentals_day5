@@ -1,0 +1,115 @@
+
+Q What python is Using ? (compiler Ya Interpreter).
+-> Python is a cross-platform programming language.
+-> Python use compiler and Interpreter both.
+
+   demo.java  // java me file banayi
+   javac demo.java  // compile ke liye //class
+   java demo      // run karne ke liye
+
+   python demo.py  // compile & run both (with single command)
+
+   Means python is an Interpreted language. but
+   Internally python use both compiler & Interpreter
+
+   Compiler use is necessary because without compilation
+   we didn't get byte code & Byte code is the reason
+   to achieve platform independency.
+
+   ****************************************************
+
+   Intermediate code-: Compiler generate byte code
+
+   Source Code -: understand by humans
+   Machine code -: computers
+   Byte code -: Not humans and not even machine
+
+   Machine -: It is an environment and platform
+   in which our code is excuting.
+
+   Machine/platform -> Operating System+ CPU
+
+   ***********************************************
+
+   for running the program the following language uses
+   the below things like :
+    C,C++,python -: OS
+    Java -: JVM (java virtual machine)
+
+    *************************************************
+
+   extension used -:    .py   extension is used
+   for python programming language.
+   (jab bhi tum python ki file ko save karoge to
+   machine ko btane ke liye ki yeh python ki file hai
+   ushe hum .py extension lagate hai  ex: demo.py )
+
+   *****************************************************
+
+                 python ki life cycle.
+                ----------------------
+   1) first i have created a file named it "demo" with
+      extension .py "demo.py" .
+   2) In second step compiler is used  that will
+      generate a Byte code file with extension (.pyc)
+      example  (demo.pyc)
+   3) PVM (python Virtual Machine ) yeh python ka
+     Interpreter hai jo ki byte code ko samjta hai .
+   4) PVM yani ki python ka interpreter uss file ko
+      execute kar deta hai
+   5) agar humare program me kuch input lena ho to leta
+      hai fir output console window prr print karr deta hai.
+
+  **********************************************************
+
+                 Flavours/ Implementations of python
+                 ------------------------------------
+
+  python download karta hu to me actual me python language
+  nahi uska compilers + interpreter(if available) + libraries ....
+
+  python -: (Compiler+Interpreter)+ Shell+ IDLE
+            (integreated development learning Environment)
+
+  (Compiler + interpreter ke different combinations
+  ko python ka different implemenations ya flavours
+  kehte hai.)
+
+  -> 28+ version of implemenations of python is present
+  (simply bolu to itne tarah ki python available hai
+   market me )
+
+  => Mainly 4 types Implemenations of python are:
+    1) Cpython -: Means the interpreter and compiler are
+            written using c programming lang.
+    2) Jython -:  Means iska (I+C) java me likha gya
+                 hai .
+    3) Ironpython -: C# (.net) usme iska compiler
+                  ya interpreter .
+    4) pypy -: python (C+I) fast chale .
+
+    Extensible - feature ko implement  karne ke liye
+               different flavours of python use hota hai.
+
+
+    ************************************************************
+
+                         Cpython
+                         --------
+
+    -> (Compiler+Interpreter) develop in  C language.
+    -> 90% use hua hai C ka (c+I) ka bnaance me.
+    -> PSF - Python Software Foundation
+    -> python programming language is officially supported
+       by PSF.
+    -> We will study this cpyhton only..
+
+    ************************************************************
+
+    
+
+
+
+
+
+
