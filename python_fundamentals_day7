@@ -1,0 +1,57 @@
+
+                             Identifiers in python
+                        _____________________
+
+  => Identifier is the name of any variable, class , function or a
+     module .
+     Identifiers are defined by programmers .
+
+     ex->  a = "lalit"  # a  variable is an identifier here.
+           import calendar # calendar is an identifier of this module
+           class Student   # Student is an identifier of this studendt class
+           def fact()      # fact is a identifier def name ke function ko.
+
+     Rule for define Identifier
+     -------------------------
+     1) Symbol allowed for the name -: A-Z , a-z , 0-9,underscore.
+     2) Identifiers never start with digit.
+        ex-:  9Num  # wrong
+     3) Identifers are case_sensitive.
+        x = 100  X=100 ;  both are different.
+     4) Reserved words (keywords ) can't be used as identifers.
+     5) No Limit for the length of Identifier  in python
+     6) Name should be Relatable (good programming practice).
+     7) You can use underscore _ also in the starting or anywhere.
+
+     There are three main ways of writing name of an Identifiers.
+     ex-:   Pascal case HimanshuGour , AnushkaGour
+            Camel case  himanshuGour ,..
+            Snake case  himanshu_gour ,...
+
+     IMportant
+     ---------
+
+    1) If an identifer of variable start with _ (single underscore)
+       protected variable
+       _num = 10   # num is a protected type variable .
+
+    2) If an identifier of variable start with __(double underscore)
+       Private variable
+       __Value = 10  #  Value is a private type of variable.
+
+    3) If an identifier start with double underscore in the
+       starting and double underscore in the ending so these
+       identifiers has given some special name  known as
+       Dunder methods or magic methods
+
+       ex-; __init__  (constructor)  , __del__ , __new__ (oops)
+
+    4) If you write double underscore in the starting and ending
+      of any normal variable then it will give you expected outuput
+      but it is a bad programming practice so please avoid it..
+
+__________________________________________________________________________
+
+
+
+
