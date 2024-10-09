@@ -1,0 +1,121 @@
+
+                       Keywords
+                       _________
+
+  -> They are the special names , reserved by the programming
+     language for specific purpose or different use.
+
+     keywords are used while writing our program.
+
+     Their are 35 keywords in python programming
+     -> True , False , None  (this three are onlu keywords which
+        start with capital letters ).
+     -> and , or , not ,is
+     -> if , elif, else
+     -> while , break , continue , return ,in ,yield
+     -> try, except , finally , raise , assert .
+     -> import , from , as , class , def , pass
+        global , nonlocal , lambda, del , with
+
+
+Q If you want to print all the keywords in python ?
+-> This below lines of code will print all the keywords in python.
+.
+    import keyword
+    print(keyword.kwlist)
+    print(len(keyword.kwlist))
+        (['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+35 )
+
+____________________________________________________________________
+
+                       comments
+                       ---------
+
+  -> Comments are the non-excutable statments of our program
+     they are ignored by the compiler .
+
+ Q  How many types of comment's in python?
+ -> There are two types of comments in python .
+   (i) Single line comment.  ( # )
+   (ii) Multilin comment .    ( """  hii
+                                     hello  """ )
+
+
+ Q Why to use Comments ?
+ -> 1) To make our code more readable and understandable .
+      (because we write code and after some time we forget the logic of it
+       and if we use comments in our code we can read it and understand what
+       we have done in the each line of code )
+    2) Easy to find errors . or we can say easy to debug( to correct errors)
+
+ Q what is single line comments ?
+ -> If we want that the compiler ignores this  single line we can use
+    single line comment  .
+    # is used for single
+    after # everything in that line will be commented  .
+
+    ex -:  (single line comment)
+
+     name = "Lalit"    # name is a  string type variable this line is comment
+     print(name)      # this is also comment
+
+ Q What is multi-line comment ?
+ -> IF we have more than one line that we want to comment so here we will
+   use multi-line comment . we can use single line comment also but commenting
+   each line is a tedious/boring (thaaku kaam)  task .
+
+   we use triple single quotes or  triple double quotes for multi-line comments
+   1) triple single quotes            2) triple double quotes
+    ''' hii                             """  hii
+        my  name                             we are learing
+        is  lalit                            python programming
+        gour   '''                          language basics   """
+
+  Note important=> In Object oriented programming (OOPs) we will learn
+        this multiline comment is also known with an  special name ( Docs String ).
+
+
+
+ Q What are the multiple ways to run python Program ?
+ -> So there are many ways to run python program they are as follows-:
+  1) By using shell ( given by python )
+  2) By Script ( using Notepad)
+  3) By Idle   ( given by python when we have installed it).
+  4) By IDE (integreated development environment )
+     ex-: ( Pycharm , VScode, Atom ..etc )
+     popular ide of python is pycharm developed by jetbrains company.
+  ..
+
+  ______________________________________________________________________________
+
+
+  Q how to run python in shell ?
+  -> So Shell is similar to commad line interface (cmd)   it is given by python
+     programming language when we installed it.
+  -> We use it to write single line program
+  -> It is good for testing purpose.
+  -> beginners can use this (for learning )
+  -> It work as python assistance .
+     you can search meaning of every keyword in python
+     just type it's name it will give you everything about it
+  -> It has a function called as help()  function which is very useful.
+  -> There is a exit() function that is used to exit out from the python shell.
+
+  Why we not use for further programming ?
+  -: 1) we can write only single line program in it .
+    2) we cannot save our code for later use  we have write new program
+        every time .
+
+
+
+
+
+
+
+
+
+
+
+
+
