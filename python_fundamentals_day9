@@ -1,0 +1,40 @@
+                   2)  Script (Notepad)
+                   ------------------
+
+ => so there are 3 basic steps to run program in Notepad.
+ 1) Write Source code in Notepad and save it with extension .py
+ 2) compile (generate the byte code).
+ 3) Run/excute .
+
+ => python demo.py  ( I make a file in python)
+    this single line will compile our python code as well as run it.
+
+ => Compiler generate byte code file also in this case but the byte
+    code is save in the ram and not visible to the programmer .
+
+    so there is a specific command to see the byte code of
+    your code in python .
+
+    python -m py_compile demo.py          # python ka code compile hoga
+
+    So this command only compile our code and generate a byte code
+    just like java (javac)
+
+    This command just compile our code and then python will not delete
+    the byte code file. Now we will get a file with extention
+    .pyc  but this file will be stored in seprate folder called
+    __pycache__ (dunder method/ magic element)
+
+    dunder -: double underscore
+
+    1) cd java (folder ke andar gaya jha meri pyhton ki file save thi)
+    2) python -m py_compile Script.py
+       (iss  commmand se python ki compiled file generate hogi
+        bo bhi ek seprate folder ke andar)
+    3) cd __pycache__
+    4) python Scrip.cpython-312.pyc  ( run ho jayega apna code)
+
+    ------------------------------------------------------------------
+
+
+
