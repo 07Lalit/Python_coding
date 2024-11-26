@@ -70,13 +70,78 @@ ex-: 1234
 output-: 4321            
 """
 
-n = int(input("Enter a number : "))
-rev=0
-original_number= n    # so using this variable i can print the original variable in the end
-                      # because n value will be zero after loop termination
-                      # so that's why i declare a variable 
-while(n!=0):
-    rev = (rev*10) + (n%10)
-    n= n//10
-print(f"Original number is {original_number}")
-print(f"reverse number is {rev}")
+# n = int(input("Enter a number : "))
+# rev=0
+# original_number= n    # so using this variable i can print the original variable in the end
+#                       # because n value will be zero after loop termination
+#                       # so that's why i declare a variable
+# while(n!=0):
+#     rev = (rev*10) + (n%10)
+#     n= n//10
+# print(f"Original number is {original_number}")
+# print(f"reverse number is {rev}")
+
+"""
+Q8 WAP to Check a number is an armstrong number or not ? (while loop)
+"""
+# i = int(input("Enter a number to check it's armstrong or not : "))
+# num= i
+# sum=0
+# while(i!=0):
+#     a= i%10
+#     sum= sum + (a*a*a)
+#     i= i//10
+# if(num==sum):
+#     print("It is an armstrong number")
+# else:
+#     print("It is not an armstrong number")
+
+"""
+Q9 WAP to print fact of any number .
+"""
+# num = int(input("Enter a number to find factorial of it :  "))
+# i =num
+# fact=1
+# while(num>=1):
+#     fact = fact*num
+#     num=num-1
+# print(f"factorial of {i} is {fact}")
+#
+#
+
+
+"""
+Q10  WAP to check if a number is a peterson number or not .
+
+"""
+# num = int(input("Enter a number : "))
+# n = num
+# sum = 0
+# while (num != 0):
+#     a = num % 10
+#     i = 1
+#     fact = 1
+#     while (i <= a):
+#         fact = fact * i
+#         i = i + 1
+#     sum = sum + fact
+#     # print(fact , sum)
+#     num = num // 10
+#
+# # print(n,sum)
+# if (n == sum):
+#     print("it is a peterson number ")
+# else:
+#     print("It is not an peterson number")
+
+
+
+
+
+
+
+
+
+
+
+
