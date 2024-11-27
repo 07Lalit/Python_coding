@@ -134,9 +134,107 @@ Q10  WAP to check if a number is a peterson number or not .
 # else:
 #     print("It is not an peterson number")
 
+"""
+Q11 WAP to check if a number is a palindrome or not ?
+
+"""
+# n= int(input("Enter a number : "))
+# num=n
+# rev=0
+# while(n!=0):
+#     rev = (rev*10) + (n%10)
+#     n= n//10
+# if (num==rev):
+#     print(f"It is a palindrome number as reverse number {rev} == given number {num} ")
+# else:
+#     print("It is not a palindrome number ")
 
 
+"""
+Q12 WAP check if a number is a prime number or not ?
+"""
+# a= int(input("Enter a number to check it's a prime or not : "))
+# i = 2
+# if (a>1):
+#     while(i<a):
+#
+#         if (a%i==0):
+#             print("It is not an prime number ")
+#             break
+#         i=i+1
+#     else:
+#         print("It is a prime number ")
+# else:
+#     print("It is not a prime number")
 
+
+"""
+Q 13  WAP to print to convert number to their corresponding unicode values ?  (using while loop)
+ Unicode values   :  A-Z -> 65-90
+                     a-z -> 97-122
+                     0-9 -> 47-52
+                     
+using chr() function .
+
+"""
+import time
+a=True
+while(a):
+    print("\n")
+    ask = int(input(f"""
+    
+                                    Welcome to program to convert number to their corresponding unicode values
+                                 ------------------------------------------------------------------------------------
+
+                  what you want to print on screen press number from (1-5) :
+                  
+                  1) capital_alphabet (A-Z)
+                  
+                  2) small_alphabet   (a-z)
+                  
+                  3) number(0-9)
+                  
+                  4) other unicode values
+                  
+                  5) Quit a program.
+                  
+
+
+                  Enter Your input -> """))
+
+    if(ask==1):
+        num=65
+        while(num<=90):
+            print(f"{num} : {chr(num)}")
+            num=num+1
+        print(f"\n Thank You !!!{chr(128512)}")
+
+    elif(ask==2):
+        num=97
+        while(num<=122):
+            print(f"{num} : {chr(num)}")
+            num=num+1
+        print(f"\n Thank you!!!{chr(128513)}")
+
+    elif(ask==3):
+        num=48
+        while(num<=57):
+            print(f"{num} : {chr(num)}")
+            num= num+1
+        print(f"\n Thank You!!{chr(128512)}")
+
+    elif(ask==4):
+        i = int(input("\nEnter a number for that you want to see their corresponding unicode value : "))
+        print(f"unicode value of number {i} is : {chr(i)}")
+        print(f"\n Thank you !!!{chr(128512)}")
+
+    elif(ask==5):
+        print(f"\n Thank You {chr(128516)}")
+        break
+
+    else:
+        print(f"""\n You entered a wrong number {chr(128514)}
+                     please try again!!!""")
 
 
 
