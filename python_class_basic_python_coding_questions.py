@@ -177,64 +177,187 @@ Q 13  WAP to print to convert number to their corresponding unicode values ?  (u
 using chr() function .
 
 """
-import time
-a=True
-while(a):
-    print("\n")
-    ask = int(input(f"""
-    
-                                    Welcome to program to convert number to their corresponding unicode values
-                                 ------------------------------------------------------------------------------------
+# import time
+#
+# a = True
+# while (a):
+#     print("\n")
+#     ask = int(input(f"""
+#
+#                                     Welcome to program to convert number to their corresponding unicode values
+#                                  ------------------------------------------------------------------------------------
+#
+#                   what you want to print on screen press number from (1-5) :
+#
+#                   1) capital_alphabet (A-Z)
+#
+#                   2) small_alphabet   (a-z)
+#
+#                   3) number(0-9)
+#
+#                   4) other unicode values
+#
+#                   5) Quit a program.
+#
+#
+#
+#                   Enter Your input -> """))
+#
+#     if (ask == 1):
+#         num = 65
+#         while (num <= 90):
+#             print(f"{num} : {chr(num)}")
+#             num = num + 1
+#         print(f"\n Thank You !!!{chr(128512)}")
+#
+#     elif (ask == 2):
+#         num = 97
+#         while (num <= 122):
+#             print(f"{num} : {chr(num)}")
+#             num = num + 1
+#         print(f"\n Thank you!!!{chr(128513)}")
+#
+#     elif (ask == 3):
+#         num = 48
+#         while (num <= 57):
+#             print(f"{num} : {chr(num)}")
+#             num = num + 1
+#         print(f"\n Thank You!!{chr(128512)}")
+#
+#     elif (ask == 4):
+#         i = int(input("\nEnter a number for that you want to see their corresponding unicode value : "))
+#         print(f"unicode value of number {i} is : {chr(i)}")
+#         print(f"\n Thank you !!!{chr(128512)}")
+#
+#     elif (ask == 5):
+#         print(f"\n Thank You {chr(128516)}")
+#         break
+#
+#     else:
+#         print(f"""\n You entered a wrong number {chr(128514)}
+#                      please try again!!!""")
+#
 
-                  what you want to print on screen press number from (1-5) :
-                  
-                  1) capital_alphabet (A-Z)
-                  
-                  2) small_alphabet   (a-z)
-                  
-                  3) number(0-9)
-                  
-                  4) other unicode values
-                  
-                  5) Quit a program.
-                  
+
+"""
+ Q14 WAP to find the simple Interest by taking amount ,rate, & time in years from the user ?
+ 
+ -> 
+Simple Interest (S.I) is the method of calculating the interest amount for some principal amount of money.
+ Have you ever borrowed money from your siblings when your pocket money is exhausted? Or lent him maybe?
+  What happens when you borrow money? You use that money for the purpose you had borrowed it in the first place.
+   After that, you return the money whenever you get the next month’s pocket money from your parents. 
+   This is how borrowing and lending work at home
+   
+But in the real world, money is not free to borrow. You often have to borrow money from banks in the form of a loan. 
+During payback, apart from the loan amount, you pay some more money that depends on the loan amount as well as the time 
+for which you borrow. This is called simple interest. This term finds extensive usage in banking.
+
+Where SI = simple interest
+
+P = principal
+
+R = interest rate (in percentage)
+
+T = time duration (in years)
+ 
+ The list of formulas of simple interest for when the time period is given in years, months and days are tabulated below:
+
+Time	Simple interest Formula	Explanation
+Years	PTR/100	T = Number of years
+Months	(P × n × R)/ (12 ×100)	n = Number of months
+Days	(P × d × R)/ (365 ×100)	d = Number of days (non-leap year)
+ 
+"""
+# Principle_amount= int(input("Enter the amount that you want to take a loan : "))
+# rate = int(input("Enter the rate of interest : "))
+# time = int(input("Enter the time in years for how many years you want a loan : "))
+# Simple_Interest = (Principle_amount*rate*time)/100
+# print(f"""
+#                            Simple Interest Calculator
+#                            ---------------------------
+#
+#             so the amount of loan is : {Principle_amount}
+#             rate of : {rate}%
+#             for {time} years
+#
+#             So the amount you have to pay after {time} year is  : {Simple_Interest+Principle_amount}
+#             so you have to pay {Simple_Interest} this much amount extra as a Interest
+# """)
+
+"""
+Q14 wap to find compount Interest ?
+
+Compound interest is the interest calculated on the principal and the interest accumulated over the previous period. 
+It is different from simple interest, where interest is not added to the principal while calculating the interest 
+during the next period. In Mathematics, compound interest is usually denoted by C.I.
+
+"""
+#Taking input from user.
+principal = int(input("Enter the principal amount: "))
+rate = int(input("Enter rate of interest: "))
+time = int(input("Enter time in years: " ))
+#
+# # Calculates compound interest
+Amount = principal * (pow((1 + rate / 100), time))
+CI = Amount - principal
+print("Compound interest is",  int(CI) )
+print(f"Total amount you have to pay after {time} year is {int(CI+principal)}")
 
 
-                  Enter Your input -> """))
+"""
+Q15 WAP to find the sum of square of first n natural number .
+"""
+# n=int(input("Enter a number till you want sum of square of Natural number : "))
+# sum=0
+# a=1
+# while(a<=n):
+#     sum= sum+ (a*a)
+#     a=a+1
+# print(f"Sum of Square of n natural number is : {sum} ")
 
-    if(ask==1):
-        num=65
-        while(num<=90):
-            print(f"{num} : {chr(num)}")
-            num=num+1
-        print(f"\n Thank You !!!{chr(128512)}")
+"""
+Q16 WAP to find the sum of cube of first n nutaurl number ?
+"""
+# n=int(input("Enter a number till you want sum of Cube of Natural number : "))
+# sum=0
+# a=1
+# while(a<=n):
+#     sum= sum+ (a*a*a)
+#     a=a+1
+# print(f"Sum of Cube of n natural number is : {sum} ")
 
-    elif(ask==2):
-        num=97
-        while(num<=122):
-            print(f"{num} : {chr(num)}")
-            num=num+1
-        print(f"\n Thank you!!!{chr(128513)}")
+"""
+Q17 WAP to calculate area of triangle ?
+"""
+# base = int(input("Enter a base of triangle : "))
+# height = int(input("Enter a height of triangle : "))
+# area = (1/2)* (base* height)
+# print(f"Area of Triangle is : {area}")
 
-    elif(ask==3):
-        num=48
-        while(num<=57):
-            print(f"{num} : {chr(num)}")
-            num= num+1
-        print(f"\n Thank You!!{chr(128512)}")
 
-    elif(ask==4):
-        i = int(input("\nEnter a number for that you want to see their corresponding unicode value : "))
-        print(f"unicode value of number {i} is : {chr(i)}")
-        print(f"\n Thank you !!!{chr(128512)}")
 
-    elif(ask==5):
-        print(f"\n Thank You {chr(128516)}")
-        break
+"""
+Q18 WAP to find the square root of any number in python ?
 
-    else:
-        print(f"""\n You entered a wrong number {chr(128514)}
-                     please try again!!!""")
+In Python, the ** operator is used:
+1. Exponentiation:
+When used between two numeric values, the ** operator performs exponentiation, raising the left operand to the power of the right operand.
+x = 2
+y = 3
+result = x ** y  # result will be 8 (2^3)
+# or we can also use math.sqrt() function 
+"""
+
+# num = float(input("Enter a number to find it's square root : "))
+# num_sqrt = num ** 0.5
+# print(f"The square root of {num} is {num_sqrt}")
+
+
+"""
+Q19 
+"""
+
 
 
 
