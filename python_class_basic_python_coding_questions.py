@@ -293,16 +293,16 @@ It is different from simple interest, where interest is not added to the princip
 during the next period. In Mathematics, compound interest is usually denoted by C.I.
 
 """
-#Taking input from user.
-principal = int(input("Enter the principal amount: "))
-rate = int(input("Enter rate of interest: "))
-time = int(input("Enter time in years: " ))
-#
-# # Calculates compound interest
-Amount = principal * (pow((1 + rate / 100), time))
-CI = Amount - principal
-print("Compound interest is",  int(CI) )
-print(f"Total amount you have to pay after {time} year is {int(CI+principal)}")
+# #Taking input from user.
+# principal = int(input("Enter the principal amount: "))
+# rate = int(input("Enter rate of interest: "))
+# time = int(input("Enter time in years: " ))
+# #
+# # # Calculates compound interest
+# Amount = principal * (pow((1 + rate / 100), time))
+# CI = Amount - principal
+# print("Compound interest is",  int(CI) )
+# print(f"Total amount you have to pay after {time} year is {int(CI+principal)}")
 
 
 """
@@ -355,14 +355,203 @@ result = x ** y  # result will be 8 (2^3)
 
 
 """
-Q19 
+Q19  WAP to swap two number ? 
+ Input-:   a= 10  ;   b= 20  
+ outpur-:  a=20   ;   b=10 
+ 
+ So there are many ways to do it 
+ 1) using extra variable  -: 
+     i) create a temporary varaible  temp  
+     ii) intilize the value of  first variable that is a  into temp  
+     iii)  then in the next line Initilize the  value of b  into a  
+     iv)  at last inlize the value of temp variable in b  
+     
+     temp = a     # a= 10 , b=20  , temp=10                   # so  before swaping our a value is 10 & b value is 20
+     a = b        # a= 20 , b= 20 , temp=10 
+     b = temp     # a=20  , b=10  , temp= 10                  # so after swapping our a value is 20 & b value is 10 
+     
+2) using arithemetic opeators 
+  i) + & - 
+  ii) * & // 
+
+logic of + & - : # a=10 , b=20
+a= a + b       # a=10+20   # a=30
+b = a- b       # b= 30-20  # b=10 
+a = a- b       # a= 30-10  # a = 20    
+
+so after swapping a value is 20 and  b value is 10    
+
+logic of * & // : # a = 10 , b= 20 
+a= a*b     # a= 10 * 20   # a=200
+b = a//b   # b = 200//20  # b= 10 
+a = a//b   # a = 200//10  # a = 20 
+so after swapping a value is 20 and  b value is 10
+
+3) using xor (^) operator it bits are same (0 & 1) answer is 0 else different than 1
+a= a^b    # a = 01010^10100 = 30
+b= a^b    # b = 11110^10100 = 10 
+a= a^b    # c = 11110^01010 = 20
+so after swapping a value is 20 and  b value is 10
+"""
+# writing a code
+
+# a = int(input("Enter a value of a : "))
+# b = int(input("Enter a value of b : "))
+# temp = None    # so decalare a variable temp with none vale initially
+# # printing before swapping :
+# print(f"value before swapping of a : {a}   ,  value of b is : {b}")
+# temp = a
+# a = b
+# b = temp
+# print(f"Value after swapping of a: {a}  , value of b is : {b} ")
+
+
+
+
+"""
+Q20  WAP Python program to solve quadratic equation ? 
+
+A quadratic equation is a polynomial equation of degree 2, which means it contains a term with a variable raised to the power of 2. It takes the form:
+
+ax2 + bx + c = 0
+where,
+a, b, and c are coefficient and real numbers and also a ≠ 0.
+If a is equal to 0 that equation is not valid quadratic equation.
+
+
 """
 
+# Python program to find roots of a quadratic equation
+
+# Importing the math module
+# import math
+#
+# # Taking input from the user for coefficients
+# a = float(input("Enter coefficient a: "))
+# b = float(input("Enter coefficient b: "))
+# c = float(input("Enter coefficient c: "))
+#
+# # Step 1: Check if a is zero (then it's not a quadratic equation)
+# if a == 0:
+#     print("Input correct quadratic equation")
+# else:
+#     # Step 2: Calculate the discriminant
+#     dis = b * b - 4 * a * c
+#     sqrt_val = math.sqrt(abs(dis))
+#
+#     # Step 3: Check the condition for discriminant
+#     if dis > 0:
+#         print("Real and different roots")
+#         root1 = (-b + sqrt_val) / (2 * a)
+#         root2 = (-b - sqrt_val) / (2 * a)
+#         print("Root 1:", root1)
+#         print("Root 2:", root2)
+#     elif dis == 0:
+#         print("Real and same roots")
+#         root = -b / (2 * a)
+#         print("Root:", root)
+#     else:
+#         print("Complex Roots")
+#         real_part = -b / (2 * a)
+#         imaginary_part = sqrt_val / (2 * a)
+#         print("Root 1:", real_part, "+ i", imaginary_part)
+#         print("Root 2:", real_part, "- i", imaginary_part)
 
 
+"""
+Q21 WAP to calculate area & perimeter & volume of 
+-> cicle 
+-> square 
+-> rectangle 
+-> rhombus 
+-> cylinder 
+"""
+
+#Circle
+# Program to calculate area and perimeter of a circle
+# Import the math module
+# import math
+#
+# # Take input from user
+# radius = float(input("Enter the radius of the circle: "))
+#
+# # Calculate area and perimeter
+# area = math.pi * radius * radius
+# perimeter = 2 * math.pi * radius
+# print("Area of the circle is:", area)
+# print("Perimeter (Circumference) of the circle is:", perimeter)
+#
+# #__________________________________________________________________________________________________________________________________________
+#
+# #Rectangle
+# # Program to calculate area and perimeter of a rectangle
+# length = float(input("Enter the length of the rectangle: "))
+# width = float(input("Enter the width of the rectangle: "))
+#
+# # Calculate area and perimeter
+# area = length * width
+# perimeter = 2 * (length + width)
+#
+# # Display the results
+# print("Area of the rectangle is:", area)
+# print("Perimeter of the rectangle is:", perimeter)
+#
+# #__________________________________________________________________________________________________________________________________________
+#
+# #Square
+#
+# # Program to calculate area and perimeter of a square
+#
+# # Take input from user
+# side = float(input("Enter the side length of the square: "))
+#
+# # Calculate area and perimeter
+# area = side * side
+# perimeter = 4 * side
+#
+# # Display the results
+# print("Area of the square is:", area)
+# print("Perimeter of the square is:", perimeter)
+#
+# #__________________________________________________________________________________________________________________________________________
+#
+# #Cylinder
+# # Program to calculate surface area and volume of a cylinder
+#
+# # Import the math module
+# import math
+#
+# # Take input from user
+# radius = float(input("Enter the radius of the base of the cylinder: "))
+# height = float(input("Enter the height of the cylinder: "))
+#
+# # Calculate surface area and volume
+# surface_area = 2 * math.pi * radius * height + 2 * math.pi * radius * radius
+# volume = math.pi * radius * radius * height
+#
+# # Display the results
+# print("Surface area of the cylinder is:", surface_area)
+# print("Volume of the cylinder is:", volume)
+#
+# #__________________________________________________________________________________________________________________________________________
+#
+# #Rhombus
+# # Program to calculate area and perimeter of a rhombus
+#
+# # Take input from user
+# diagonal1 = float(input("Enter the length of the first diagonal of the rhombus: "))
+# diagonal2 = float(input("Enter the length of the second diagonal of the rhombus: "))
+# side = float(input("Enter the length of a side of the rhombus: "))
+#
+# # Calculate area and perimeter
+# area = (diagonal1 * diagonal2) / 2
+# perimeter = 4 * side
+#
+# # Display the results
+# print("Area of the rhombus is:", area)
+# print("Perimeter of the rhombus is:", perimeter)
 
 
-
-
+#________________________________________________________________________________________________________________________________________________________________________________________
 
 
