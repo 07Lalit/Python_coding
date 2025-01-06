@@ -239,6 +239,9 @@ b = 15
 print(a ^ b)
 
 print(21 ^ 18)
+"""
+
+
 
 # print(True or False)
 
@@ -269,6 +272,92 @@ print(21 ^ 18)
 #     print("True")
 # else:
 #     print("False")
+
+
+________________________________________________________________________________
+
+
+                IV) Bitwise complementary operator 
+                ----------------------------------
+
+-> The bitwise complement operator is a unary operator (works on only 
+    one operand). It takes one number and inverts all bits of it. When 
+    bitwise operator is applied on bits then, all the 1’s become 0’s and
+    vice versa. The operator for the bitwise complement is ~ (Tilde).
+    
+    For any integer n, the bitwise complement of n will be -(n+1)
+    
+-> So in our memory positive number is directly represent in memory.
+
+-> negative number represent in 2's compliment form in memory .
+
+
+    
+    ex-:
+    
+    Bitwise complement Operation of 2 (~ 0010 ): 
+    0010 
+   +   1
+   -------- 
+    0011   that is 3 but of negative
+    
+
+Note: 
+The bitwise Complement of 2 is same as  the binary representation of -3 
+
+____________________________________________________________________________________________________________________
+
+                    V) Bitwise Left shift operator  "<<"
+                    --------------------------------------
+                    
+-> x << b  -> The binary of x is shifted by x bits towards left. 
+
+                      
+
+n = 16
+print(n<<2)
+
+a = 99 
+print(a<<2)
+
+b = 122 
+print(b<<4)
+
+c = 69
+print(c<<3)
+
+
+                    VI) Bitwise Right shift operator 
+                    ------------------------------------- 
+                    
+-> Binary of x will be shifted in right side by given bits 
+
+Note-:
+-> last bit of every odd number is always 1 .
+ ex-: odd(11) -> 1011 in binary & 1 -> 1 
+ ex-: even(10) -> 1010 & 1 -> 0 
+ex -> 20>>2 
+
+
+-> var = 10 
+ left shift 10<<1  -> 10*2 -> 20 
+ right shift 10>>1 -> 10//2 -> 5 
+
+print(16>>2)
+
+a = 99
+print(a>>2)
+
+b = 122 
+print(b>>4)
+
+c = 69
+print(c>>3)
+
+"""
+
+
+
 
 
 
