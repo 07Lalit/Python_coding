@@ -354,6 +354,216 @@ print(b>>4)
 c = 69
 print(c>>3)
 
+______________________________________________________________________________________________________
+
+"""
+
+                        6) Membership Operators
+                        -------------------------
+                        
+-> Membership operators are used to test whether a particular 
+   value is present in a sequence 
+   (like a list, tuple, string, etc.).
+
+->Operators:
+-------------------------
+
+i) in: Returns True if the specified value is found in the sequence.
+
+ii) not in: Returns True if the specified value is not found in the sequence.
+
+Examples:
+
+# Using 'in' operator
+----------------------
+print("A" in "ANUSHKA")  # Output: True
+print("Y" in "KANCHAN")  # Output: False
+
+
+# Using 'not in' operator
+--------------------------
+print(2 not in [4, 6, 8, 2, 5])  # Output: False
+print(5 not in [1, 2, 3, 4])      # Output: True
+
+# Empty string check
+print("" in "KRISH")             # Output: True (empty string is a 
+                                                substring of every string)
+print("abc" in "abcd")           # Output: True
+print("xy" in "abcd")           # Output: False
+
+
+Key Points:
+-----------
+
+->Membership operators work with sequence data 
+    types like strings, lists, tuples, and sets.
+
+->Empty strings are considered substrings of all strings.
+
+_________________________________________________________________________________________
+
+                            7) Identity Operators
+                            -------------------------- 
+                            
+-> Identity operators compare the memory location of two objects. 
+   They check whether two variables point to the same object in memory.
+   
+   if we have given any arithemetic operator in value1  means left hand part 
+   and after evalutaion done . if the value 2 that is the right hand part of is
+   also same than final  answer will  be True otherwise False because of 
+   immutability concept in python .
+   
+   
+
+Operators:
+---------
+
+I) is: Returns True if both variables refer to the same object.
+
+II) is not: Returns True if the variables refer to different objects.
+
+Examples:
+
+# Example 1
+x = 10
+y = 10
+z = 20
+print(x is y)        # Output: True (both refer to the same object in memory)
+print(x is z)        # Output: False
+
+
+# Example 2
+lst1 = [1, 2, 3]
+lst2 = [1, 2, 3]
+print(lst1 is lst2)  # Output: False (different objects, even if contents are the same)
+print(lst1 == lst2)  # Output: True (contents are the same)
+
+Key Points:
+-----------
+
+->  is checks for object identity, not value equality.
+
+->  == checks for value equality.
+
+  
+x = 256
+y = 256
+print(x is y)  # Output: True
+
+x = 300
+y = 300
+print(x is y)  # Output: False
+
+
+___________________________________________________________________________________________
+
+                 #Ternary Operator
+                 -------------------
+                 
+-> The ternary operator allows for a single-line if-else condition.
+
+Syntax:
+value = `true_value` if `condition` else `false_value`
+Examples:
+# Example 1
+x = 10
+y = "EVEN" if x % 2 == 0 else "ODD"
+print(y)  # Output: EVEN
+
+# Example 2
+a, b = 10, 20
+result = a if a > b else b
+print(result)  # Output: 20
+
+
+_________________________________________________________________________________________________
+
+                                # Operator Precedence
+                                ----------------------
+-> Operator precedence determines the order in which operators 
+   are evaluated in an expression.
+
+-> Precedence Order (Highest to Lowest):
+ 
+1) Parentheses: ()
+
+2) Exponentiation: **
+
+3) Unary operators: +, -
+
+4) Multiplication/Division: *, /, //, %
+
+5) Addition/Subtraction: +, -
+
+6) Relational operators: <, <=, >, >=
+
+7) Equality operators: ==, !=
+
+8) Logical AND: and
+
+9) Logical OR: or
+
+-> Example:
+x = 10 + 20 * 2
+print(x)  # Output: 50 (multiplication has higher precedence than addition)
+
+x = (10 + 20) * 2
+print(x)  # Output: 60 (parentheses alter the precedence)
+
+
+_____________________________________________________________________________________________ 
+
+                        #eval() Function
+                        -----------------
+-> The eval() function parses the expression passed to it and 
+   evaluates it as a Python expression.
+
+Syntax:
+eval(expression)
+expression: A string representing a valid Python expression.
+
+Examples:
+# Mathematical expression
+result = eval("20 * 3 + 5")
+print(result)  # Output: 65
+
+# Using variables in eval
+x = 10
+y = 5
+expression = "x * y + 10"
+print(eval(expression))  # Output: 60
+
+
+#  Key Points-: 
+
+1) eval() is powerful but should be used with caution,
+   especially with untrusted input.
+
+2) It can execute arbitrary code, leading to security vulnerabilities.
+
+
+___________________________________________________________________________________ 
+
+                  # Unicode and chr() / ord() Functions
+                  --------------------------------------
+                  
+I) ord() Function-: Returns the Unicode code of a given character.
+
+print(ord("A"))  # Output: 65
+print(ord("a"))  # Output: 97
+
+II) chr() Function-: Returns the character corresponding 
+       to a given Unicode code.
+
+"""
+
+a = 10 
+b = 10 
+c = 20 
+print(id(a) , id(b) , id(c) , id(a+b))
+print(id(a+b) )
+print(a+b is c)
+
 """
 
 
