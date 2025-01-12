@@ -1,0 +1,114 @@
+"""
+                                         # MEMORY MANAGEMENT IN PYTHON 
+                                      -------------------------------------
+
+-> The whole memory management in python depends on these 3 things  -> 
+1) Garbage block 
+2) Garbage Collector 
+3) Reference Count .
+
+                                      # Garbage block 
+                                    --------------------
+
+->  a = 10 
+    a = 20 
+
+At this moment memory has 2 object  because both object  are different from each other . 
+and second object has a special name is python known as " Active block "  and first block 
+as " Garbage block " . 
+
+Active block -: Atleast 1 reference refer to that object is known as active block .
+Garbage block -: If no reference is refering to any object so that object is known as garbage block .
+
+One reference cannot refer multime objects at the same time  but a single object can be refer by multiple reference .
+
+ex -:  a = 10 
+       b = 10 
+       c = 10 
+       d = 10 
+
+In the above example reference count is four (4) & object count is One (1)  . 
+
+
+Q What is derefrence / dereffered  ? 
+=> If a object connection is cut or break up to a reference is known as dereference or dereffered . 
+
+
+___________________________________________________________________________________________________________________________________
+
+                                    # Garbage Collector 
+                                    -------------------
+
+-> It is an internal software or routine which is continously running in our background for collecting 
+   the garbage block make them free from the memory (heap area ) to free pool .
+
+ Routine -> It is kind of software that run's continously in our system .
+
+ Free pool -> It is the unused part of memory in the heap area .
+
+___________________________________________________________________________________________________________________________________
+
+
+                                 # Working 
+                               ---------------
+source code -> compiler -> .pyc (bytecode )  -> PVM -> execute ( CPU + OS) -> output 
+
+-> Garbage collector is present inside PVM (python virtual Machine ) . PVM ( it is a combination of compiler + interpreter  collection )
+   While the execution of the code the garbage collector continously watching our code (heap area monitoring )  &   trying to find 
+   such objects which is not referrd or deferrenced  by any reference ( Garbage block) . It cleans the unnecessary used memroy area & 
+   make if free for future use  . otherwise the heap area get filled with a huge amount of garbage block an they are consuming unnecessary 
+   memory which can slow down the execution  of our code & performance also .
+
+
+______________________________________________________________________________________________________________________________________________
+
+                               # Reference Count 
+                            --------------------------
+
+-> When garbage collector see reference count = 0 
+ it sends it into the free pool .
+
+what does object store  ? 
+-> ex -:   a = 10 
+                    reference count -> 1  (at runtime they are continously changing It is like property ) 
+                    class -> 'int'  
+                    value -> 10 
+
+Object containg extra inforamtion that's why python datatypes contain more memory than other programming language .
+( that's why size is fluctuating not fixed ).
+
+Reference count is a value that decides that the object is a garbage block if its Refrence count is 0 . & sends 
+it to the free pool (heap memory ) . 
+
+
+# why python slow -: 
+1) It's translation form source code to byte and then to machine code .
+  conversion time make's it slow . 
+
+2) Dynamically typed . 
+
+3) python has to continously execute memory cleanup activities via Garbage collector that is the another 
+   reason for slow speed of python .
+
+
+
+Q How to find size of an object ? 
+-> you need to import sys module  
+-> inside sys module there is a funtion named as getsizeof() 
+
+ex-: 
+
+
+import sys 
+a=10 
+s = sys.getsizeof(a)
+print(s) 
+
+# output -: 28 
+
+
+________________________________________________**********************************************___________________________________________________________________________________________________________
+
+
+
+"""
