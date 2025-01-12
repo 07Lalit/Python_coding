@@ -1,0 +1,317 @@
+"""
+
+                        Immutability in Python
+                        ------------------------
+
+Mutable vs. Immutable
+----------------------
+
+1) Mutable: Something that can change.
+2) Immutable: Something that cannot be changed.
+
+-> All fundamental datatypes are immutable which means once we create an object we cannot perform any changes to 
+   that object. If we are trying to change then, with those changes a new object will be created . 
+   This non-changeable behavior is called Immutability
+
+-> In Python if a new object is required then PVM won't create object immediately first . it will check  
+   if any object is available with the required value/content or not. If it is available then existing 
+   object will be reused . If it is not available then only a new object will be created .
+
+-> The Pros of this nature of python is memory utilization & performance will be improved .
+
+-> But the Problem in this approch is several refrences pointing to the same object by using one 
+   refrences if we are allowed to change the content in the existing object to the remaining 
+   references will be affected . To prevent this immutability concept is required . 
+   According to this once we create an object we are not allowed to change it's content/value 
+   If we are trying to change then with those changes a new object will be created .
+
+
+
+Python's 5 Fundamental Data Types:
+->int
+->float
+->complex
+->bool
+->str
+These are immutable in nature.
+
+
+-> In python everthing is a object  . 
+   Q  So before understanding object we should know about class ? 
+   => So class is a blueprint of an object just like the model of a house . 
+      and objects are the instance of a class means we can make any number of house by seeing the model of a house (infine numbers) 
+
+   As as i already said that in python everything is an object  . so for every datatypes , python has a predefined class  
+
+  example   class int  ,      class float    ,     classs bool   ,   class str  ,   etc
+  These class contains  two things 
+  1) Properties  (attributes)  also known as data members . We use directly .
+  2) methods ( behaviour ) also known as member function .
+
+  properties -> example  in keywords   me   kwlist  , c.real  , c.imag .
+
+  methods  -> .lower()  , .upper()  .
+
+  a = 100 
+
+  In nomal language use say that we declare a variable "a" which store value 100 . 
+
+  but technical language ->   100 is an object of integer class and a is the refrence variable which is basically pointing 
+                              that object  
+
+
+  a -> refrence variable 
+
+  100 -> object ( it may be of different class)  
+
+ That's why when we print type(a) we get like this    ->      <class 'int'>  
+
+
+Conclusion -:  In python everything is an object and for every data type there is a predefined class and when we are 
+               assigning any value to a variable of any datatype internally actually that is an object of that 
+               particular class and that variable is a reference variable that is basically pointing that particular 
+               object .
+
+______________________________________________________________________________*_____________________________________________________________
+
+
+-> In python object lies in heap area & refrence lies in stact area of our RAM (memory) .
+#  Pointing => refrence store the address of that value .
+
+Ram has two memory area -:  i)  Stack area 
+                            ii) Heap area 
+
+Programming fundamental Rule -:  Anything which take place at runtime ,that will always occur in heap area of 
+                                 memory / RAM . (As we know python is dynamically typed language so the creation of object  
+take place at Runtime that's why in python object  stored in heap area. 
+
+python avoid unnecessary creation of object .  ( so before creating any object with same content /value . python 
+will not create another object it only create refrence which point same address 
+
+example -:   var1 = 10 
+             var2 = 10    
+
+In this object creation  is 1 
+refrence are 2  Pointing to the same memory address . 
+
+
+-> SO IF AN OBJECT IS CREATED IN THE HEAP AREA SO IT'S NOT POSSIBLE TO CHANGE IT'S VALUE / CONTENT & THIS BEHAVIOUR IS KNOWN AS 
+   IMMUTABILITY IN PYTHON .
+
+-> OBJECT IS IMMUTABLE 
+-> REFRENCES IS MUTABLE 
+
+_____________________________________________________________________________________________________________________________________________
+
+
+Q Like C programming language values can be ovverriden in python ? 
+-> No , whenever we assign a new value to a variable  it create a new object in the heap area of RAM (memory) with that value  
+   & assign it's address to the reference . 
+
+
+So there are total 14 datatypes in python 
+10 datatypes is immutable ( int , float , complex , bool , str , None , typle , frozenset , range , bytes ) 
+4 is mutable datatypes in python 
+       -> list 
+       -> dictionary 
+       -> set 
+       -> bytearray 
+In python depends on datatypes , objects are immutable but every refrence is mutable . 
+
+
+
+______________________________________________________________________________________________________________________________________________
+Example of Immutability-:
+
+a = 10
+print("ID of a (10):", id(a))
+
+a = 20
+print("ID of a (20):", id(a))
+
+
+Explanation:
+When a = 10, Python creates an object for 10 and stores its memory address.
+When a = 20, it creates a new object for 20 and assigns it to a.
+The IDs are different because a new object is created instead of modifying the old one.
+
+Checking Memory Address with id()
+In Python, variables reference objects in memory. We can check this using the id() function.
+
+Example:
+a = 10
+b = 10
+print("ID of a:", id(a))
+print("ID of b:", id(b))
+Output:
+
+ID of a: 2633830722128
+ID of b: 2633830722128
+Explanation:
+Both a and b point to the same memory location since they reference the same immutable object.
+
+Why Immutability?
+1) Memory Utilization:
+If the value is already stored in memory, Python avoids creating a new object. 
+Instead, it points the new variable to the existing object.
+
+2) Performance:
+Reusing objects improves code efficiency and reduces memory consumption.
+
+
+Behavior of Immutable Objects:
+------------------------------
+If a variable's value is reassigned:
+A new object is created.
+The variable references the new object.
+The original object remains unchanged.
+
+
+Example:
+python code 
+
+a = 10
+print("Original ID of a:", id(a))
+
+a = a + 1  # New object is created
+print("Modified ID of a:", id(a))
+Output:
+
+less
+
+Original ID of a: 2633830722128
+Modified ID of a: 2633830722448
+Explanation:
+Initially, a points to 10. When incremented, Python creates a new object for 11 and updates a 
+to reference this new object.
+
+Behavior of Mutable Objects:
+----------------------------
+Mutable objects allow changes to their content without creating a new object.
+
+Example:
+python
+Copy code
+arr = [1, 2, 3]
+print("Original ID of arr:", id(arr))
+
+arr.append(4)  # Modifies the list in place
+print("Modified ID of arr:", id(arr))
+
+Output:
+
+Original ID of arr: 140215573218368
+Modified ID of arr: 140215573218368
+Explanation:
+The memory location of the list remains the same after modification.
+
+Memory Management in Python
+---------------------------
+
+1) Heap Memory:
+Objects are stored in the heap.
+
+2) Stack Memory:
+References to objects are stored in the stack.
+
+
+Q How does Python handle variables Internally? 
+-> When a value is assigned to a variable.Python checks if the value already exists in memory.
+   If found, it reuses the existing object.If not, it creates a new object and assigns it to the variable.
+
+Example:
+
+x = 10
+y = 10
+z = 20
+
+print("ID of x:", id(x))
+print("ID of y:", id(y))
+print("ID of z:", id(z))
+
+Output:
+
+ID of x: 2633830722128
+ID of y: 2633830722128
+ID of z: 2633830722448
+
+Explanation:
+x and y share the same memory location, but z points to a different location.
+
+
+
+Immutability of Strings
+------------------------
+
+-> Strings are immutable, meaning their content cannot be changed. 
+    Any operation that appears to modify a string actually creates a new string object.
+
+Example:
+
+s = "hello"
+print("Original ID of s:", id(s))
+
+s = s + " world"
+print("Modified s:", s)
+print("New ID of s:", id(s))
+Output:
+
+
+Original ID of s: 140215573218368
+Modified s: hello world
+New ID of s: 140215573218560
+
+Explanation:
+A new string object is created, and s now references the new object.
+
+Mutable vs. Immutable 
+
+Summary-: 
+
+              |      Mutable	        |    Immutable
+--------------|-----------------------|----------------
+Examples	    |  List, Dict, Set	    | Int, Float, Str, Tuple
+Modifiable?	  | Yes	                  |     No
+New Object?	  | No	                  |     Yes
+_______________________________________________________________
+
+
+Performance	May require more memory	More efficient due to reuse
+
+# points to Remember:
+Immutable objects cannot be modified. Assigning a new value creates a new object.
+Mutable objects can be changed in place.
+Use id() to check the memory address of an object
+
+
+____________________________________________________________________________________________________________________________________________________________________________
+
+
+                                                                  CONCLUSION OF IMMUTABILITY IN PYTHON 
+                                                                -------------------------------------------
+
+->  In python all values we actually used are called 'Object' and they are store in heap area of our memory .
+
+-> In python all variables we create are called  ' object refrence ' and they holds the address of the 
+   respective object .
+
+-> When we assign a value to a variable (reference) then python does the following things .
+
+  1) It search in heap area that if a particular value(object) is present or Not .
+
+  2) If yes, then it would not create a new object & it assign the same object to the new reference .
+
+  3) If No , If it is not present , then python create a new object then assign the address of the new object to that reference 
+
+  this behaviour of python is known as IMMUTABILITY .
+
+
+_____________________________________________________**********************************************_______________________________________________________________________________
+
+
+
+
+
+
+
+"""
